@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DRNav: Semantic-Geometric Representations for Proactive Dead-End Recovery and Navigation">
+  <meta name="keywords" content="Representation Learning, Reactive and Sensor-Based Planning, Task and Motion Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="Mv03K1PSHa6DfPDktDXDooEr11AZ1jIliliLan_6mQg" />
+  <title>DRNav: Semantic-Geometric Representations for
+Proactive Dead-End Recovery and Navigation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <img src="./static/images/overview.svg" -->
+          <!-- alt="Splat-Nav Logo" /> -->
+          <h1 class="title is-1 publication-title"> DRNav: Semantic-Geometric Representations for Proactive Dead-End Recovery and Navigation  </h1>
+<!--          <div class="is-size-5 publication-authors">-->
+<!--            <span class="author-block">-->
+<!--              <a href="https://scholar.google.com/citations?user=Yc9_o-4AAAAJ&hl=en">Samarth Chopra</a>,</span>-->
+<!--             <span class="author-block">-->
+<!--              <a href="/everydayvla">Jing Liang</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="/everydayvla">Gershom Seneviratne</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="/everydayvla">Yonghan Lee</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="/everydayvla">Jaehoon Choi</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--            <a href="/everydayvla">Jianyu An</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--            <a href="/everydayvla">Stephen Cheng</a>,</span>-->
+<!--            <span class="author-block">-->
+<!--            <a href="/everydayvla">Dinesh Manocha</a></span>-->
+<!--&lt;!&ndash;            </span>&ndash;&gt;-->
+<!--          </div>-->
+
+<!--          <div class="is-size-5 publication-authors">-->
+<!--            <span class="author-block">University of Maryland, College Park</span>-->
+<!--          </div>-->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/10494911"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="link to arxiv"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="/vla"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="/vla"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="align-items: center;">
+     <img src="./static/images/overview_compressed-1.png"
+              alt="Splatblox architecture."
+              style="width: 600px; display: block; margin: 0 auto;"
+     />
+      <p class="has-text-justified"></p>
+<!--      <span class="Splatblox">Splatblox</span>-->
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present DRNav (Dead-End Recovery-aware Nav-
+            igation), a proactive navigation framework for environments with
+            blocked junctions, cul-de-sacs, and occlusions. Our method fuses
+            RGB and LiDAR features with cross-attention to estimate per-
+            cell dead-end probability in a local semantic maps, updates these
+            estimates with Bayesian filtering, and integrates the resulting
+            risk map into local planning through EDE-aware (expected
+            dead-end exposure) scoring and recovery waypoint selection.
+            Beyond traversability, our explicitly encodes recovery points and
+            integrates them into the navigation loop. We evaluate DRNav
+            in dense indoor and outdoor Isaac Sim scenarios against prior
+            methods, including DWA, MPPI, and Nav2 DWB baselines. The
+            fused detector achieves 83.33% dead-end classification accuracy
+            at 0.033 s/image (30 Hz), and 52.4% reduction in wasted path
+            distance (NPR) with more proactive avoidance behavior in. dead-
+            end-prone layouts. In closed-loop navigation, DRNav exhibits
+            earlier turn-away behavior at dead-end approaches, reduces
+            backtracking and oscillatory re-planning, and improves recovery
+            after dead-end entry by selecting feasible exit waypoints.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="video-container">
+          <video controls width="640">
+            <source src="./static/videos/Splatblox_ICRA_2026.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<body>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
