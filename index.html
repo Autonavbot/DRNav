@@ -122,47 +122,11 @@ Proactive Dead-End Recovery and Navigation</title>
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present DRNav (Dead-End Recovery-aware Nav-
-            igation), a proactive navigation framework for environments with
-            blocked junctions, cul-de-sacs, and occlusions. Our method fuses
-            RGB and LiDAR features with cross-attention to estimate per-
-            cell dead-end probability in a local semantic maps, updates these
-            estimates with Bayesian filtering, and integrates the resulting
-            risk map into local planning through EDE-aware (expected
-            dead-end exposure) scoring and recovery waypoint selection.
-            Beyond traversability, our explicitly encodes recovery points and
-            integrates them into the navigation loop. We evaluate DRNav
-            in dense indoor and outdoor Isaac Sim scenarios against prior
-            methods, including DWA, MPPI, and Nav2 DWB baselines. The
-            fused detector achieves 83.33% dead-end classification accuracy
-            at 0.033 s/image (30 Hz), and 52.4% reduction in wasted path
-            distance (NPR) with more proactive avoidance behavior in. dead-
-            end-prone layouts. In closed-loop navigation, DRNav exhibits
-            earlier turn-away behavior at dead-end approaches, reduces
-            backtracking and oscillatory re-planning, and improves recovery
-            after dead-end entry by selecting feasible exit waypoints.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
-
 <!-- Video Comparison Section -->
 <section class="section video-comparison-section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3">Qualitative Comparison</h2>
         <div class="video-grid-wrapper">
           <table class="video-grid-table">
             <!-- Method headers -->
@@ -257,6 +221,39 @@ Proactive Dead-End Recovery and Navigation</title>
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present DRNav (Dead-End Recovery-aware Nav-
+            igation), a proactive navigation framework for environments with
+            blocked junctions, cul-de-sacs, and occlusions. Our method fuses
+            RGB and LiDAR features with cross-attention to estimate per-
+            cell dead-end probability in a local semantic maps, updates these
+            estimates with Bayesian filtering, and integrates the resulting
+            risk map into local planning through EDE-aware (expected
+            dead-end exposure) scoring and recovery waypoint selection.
+            Beyond traversability, our explicitly encodes recovery points and
+            integrates them into the navigation loop. We evaluate DRNav
+            in dense indoor and outdoor Isaac Sim scenarios against prior
+            methods, including DWA, MPPI, and Nav2 DWB baselines. The
+            fused detector achieves 83.33% dead-end classification accuracy
+            at 0.033 s/image (30 Hz), and 52.4% reduction in wasted path
+            distance (NPR) with more proactive avoidance behavior in. dead-
+            end-prone layouts. In closed-loop navigation, DRNav exhibits
+            earlier turn-away behavior at dead-end approaches, reduces
+            backtracking and oscillatory re-planning, and improves recovery
+            after dead-end entry by selecting feasible exit waypoints.
+          </p>
         </div>
       </div>
     </div>
